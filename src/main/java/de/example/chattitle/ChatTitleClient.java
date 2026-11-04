@@ -65,6 +65,6 @@ public class ChatTitleClient implements ClientModInitializer {
         Identifier id = Identifier.tryParse(soundId);
         if (id == null) return;
         client.getSoundManager().play(
-                PositionedSoundInstance.master(SoundEvent.of(id), pitch, volume));
+                PositionedSoundInstance.ui(SoundEvent.of(id), pitch, volume));
     }
 }
